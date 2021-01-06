@@ -23,6 +23,12 @@ public class Cube {
 		str = new String(tmp);   
 	}
 
+	public void moveLeft(int n) {
+		for(int i=0 ; i<n; i++){
+			moveLeft(); 
+		}
+	}
+	
 	public void moveRight() {
 		char[] tmp = new char[this.str.length()]; 
 		
@@ -37,4 +43,13 @@ public class Cube {
 		tmp[0] = tmp_char;
 		str = new String(tmp); 
 	}
+	
+	public void moveRight(int n) {
+		for(int i=0 ; i<n; i++){
+			moveRight(); 
+		}
+	}
+	
+	
+	
 }

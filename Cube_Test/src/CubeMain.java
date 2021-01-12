@@ -1,20 +1,20 @@
+import java.util.Scanner;
 
 public class CubeMain {
 	
+	private static Scanner sc;
+
 	public static void main(String[] args) {
 		
-		Cube c = new Cube("abcdefghijk"); 
+		Cube c = new Cube("abcdefghijk");
+		String str;
+		sc = new Scanner(System.in);
+		boolean flag = true; 
 		
-		c.moveLeft();
-		System.out.println(c.str);
 		
-		c.moveLeft(2); 
-		System.out.println(c.str);
 		
-		c.moveRight(3);
-		System.out.println(c.str);
+		c.printCube();
 		
-<<<<<<< HEAD
 		while(flag) {
 			System.out.print("CUBE > ");
 			str = sc.nextLine(); 
@@ -119,14 +119,6 @@ public class CubeMain {
 //		
 //		c.moveRight();
 //		System.out.println(c.str);
-=======
-		c.moveRight();
-		System.out.println(c.str);
->>>>>>> refs/remotes/origin/master
 	}
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> refs/remotes/origin/master

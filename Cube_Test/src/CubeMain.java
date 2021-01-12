@@ -31,6 +31,8 @@ public class CubeMain {
 					flag = false; 
 				}
 				
+				
+				
 				if ( ch_arr[0] == '\'') {
 					System.out.println("잘못된 입력감지! 다시 입력해주세요.");
 					break; 
